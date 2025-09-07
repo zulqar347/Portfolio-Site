@@ -1,0 +1,120 @@
+/* Container */
+.about-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1a1a1a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Layout */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+}
+
+/* Profile Pic */
+.about-pic {
+  width: 180px;
+  height: 180px;
+  border: 4px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.about-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bio */
+.about-text {
+  max-width: 700px;
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.highlight {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Skills */
+.skills-title {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.skills-list li {
+  background: #2a2a2a;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Resume Button */
+.btn-resume {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-resume:hover {
+  background: #4338ca;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .about-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+}

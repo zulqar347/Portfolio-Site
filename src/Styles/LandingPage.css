@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1a1a1a);
+  color: #fff;
+}
+
+/* Container */
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name and Title */
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.title {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #4338ca;
+}
+
+.btn.secondary {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #222;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-group {
+    flex-direction: row;
+  }
+}
+
+/* About Section */
+.about-section {
+  max-width: 800px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(31, 31, 31, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.highlight {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-section p {
+    font-size: 1.1rem;
+  }
+}
+
