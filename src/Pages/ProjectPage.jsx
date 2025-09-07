@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       title: "Portfolio Website",
       description: "A responsive personal portfolio built with React and Django.",
       img: "/Portfolio.png", // replace with your image
-      link: "https://earnify-frontend.onrender.com"
+      link: "https://portfolio-site-o7m4.onrender.com/"
     },
     {
       title: "E-commerce Store",
